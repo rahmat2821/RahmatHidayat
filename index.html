@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Belajar JavaScript</h1>
+    <script>
+        let a = 10;
+        console.log(a);
+        a = 12;
+        console.log(a)
+
+        
+        let nama = prompt("Isi Nama anda ...")
+        alert("Hai " + nama)
+
+        let b = confirm()
+        console.log(b)
+
+        a = 20
+        b = 30
+        alert(a+b)
+
+        // Fungsi Permainan
+        function myGame() {
+            let mulai;
+
+            while (true) {
+                let nama = prompt ("masukkan nama anda");
+                    alert("hai " + nama )
+                let lanjut = confirm("Ingin bermain?");
+                // let yourName = Prompt("Nama kamu?"); // Jika ingin meminta nama pemain
+                if (lanjut == true) {
+                    
+                    // Pertanyaan pertama
+                    let quest1 = prompt("2 + 2 = ?");
+                    if (quest1 == 4) {
+                        alert("benar");
+                    } else {
+                        alert("Yah Salah Bodo kau");
+                        alert("anda dikeluarkan dari permainan karna salah!")
+                        break;
+                    }
+
+                    // pertanyaan kedua
+                    let quest2 = prompt("9 * 12");
+                    if (quest2 == 108) {
+                        alert("Benarr lagii");
+                        alert("Hore semua jawaban kamu benar");
+                    } else {
+                        alert("yahh salah");
+                        alert("anda dikeluarkan dari permainan karna salah!")
+                        break;
+                    }
+                } else {
+                    mulai = "Kamu berhenti bermain";
+                    alert(mulai);
+                    break;
+                }    
+            }
+        }
+
+
+    </script>
+    
+    <button onclick="myGame('Hai Mexx')">klik longor</button>
+</body>
+</html>
